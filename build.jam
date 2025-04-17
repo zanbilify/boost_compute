@@ -36,12 +36,11 @@ constant boost_dependencies :
     /boost/uuid//boost_uuid ;
 
 project /boost/compute
-    : common-requirements
-        <include>include
     ;
 
 explicit
-    [ alias boost_compute : : : : <library>$(boost_dependencies) ]
+    [ alias boost_compute : : :
+        : <include>include <library>$(boost_dependencies) ]
     [ alias all : boost_compute test ]
     ;
 
