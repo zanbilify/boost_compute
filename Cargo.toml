@@ -1,0 +1,44 @@
+[package]
+name = "boost_compute"
+description = "Boost C++ library boost_compute packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_compute"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_compute"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_algorithm = { version = "0.1.0", path = "../boost_algorithm" }
+boost_array = { version = "0.1.0", path = "../boost_array" }
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_atomic = { version = "0.1.0", path = "../boost_atomic" }
+boost_chrono = { version = "0.1.0", path = "../boost_chrono" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_filesystem = { version = "0.1.0", path = "../boost_filesystem" }
+boost_function = { version = "0.1.0", path = "../boost_function" }
+boost_function_types = { version = "0.1.0", path = "../boost_function_types" }
+boost_fusion = { version = "0.1.0", path = "../boost_fusion" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_lexical_cast = { version = "0.1.0", path = "../boost_lexical_cast" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_optional = { version = "0.1.0", path = "../boost_optional" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_property_tree = { version = "0.1.0", path = "../boost_property_tree" }
+boost_proto = { version = "0.1.0", path = "../boost_proto" }
+boost_range = { version = "0.1.0", path = "../boost_range" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_thread = { version = "0.1.0", path = "../boost_thread" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_tuple = { version = "0.1.0", path = "../boost_tuple" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_typeof = { version = "0.1.0", path = "../boost_typeof" }
+boost_utility = { version = "0.1.0", path = "../boost_utility" }
+boost_uuid = { version = "0.1.0", path = "../boost_uuid" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
